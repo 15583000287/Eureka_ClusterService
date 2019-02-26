@@ -9,6 +9,7 @@ spring:
 eureka:
   instance:
     hostname: slave1
+# 注册服务器的地址：服务提供者和服务消费者都要依赖这个地址
   client:
     serviceUrl:
       defaultZone: http://slave2:8762/eureka/
